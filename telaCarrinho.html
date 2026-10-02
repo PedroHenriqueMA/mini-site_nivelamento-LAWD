@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho | Mercado Bacana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="telaCarrinho.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+
+        <a href="index.html" class="logo">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <h1>Mercado<br>Bacana</h1>
+        </a>
+
+        <div class="busca">
+            <input type="text" placeholder="O que você está procurando?">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+
+        <div class="nav">
+            <div class="conta">
+                <span class="material-symbols-outlined">person</span>
+                <p class="texto-primario">Entrar<br>ou cadastrar</p>
+            </div>
+
+            <div class="carrinho">
+                <a href="telaCarrinho.html">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <div class="quantidade">3</div>
+                </a>
+                <p class="texto-primario">Carrinho<br>R$ 39,37</p>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Conteúdo principal -->
+    <div class="layout-pagina">
+
+        <!-- Menu lateral -->
+        <aside class="barra-lateral">
+            <nav>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">home</span>
+                    <p>Início</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <p>Todos os produtos</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">sell</span>
+                    <p>Ofertas</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">nutrition</span>
+                    <p>Hortifruti</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">inventory_2</span>
+                    <p>Mercearia</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">local_drink</span>
+                    <p>Bebidas</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">cleaning_services</span>
+                    <p>Limpeza</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">soap</span>
+                    <p>Higiene Pessoal</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">ac_unit</span>
+                    <p>Congelados</p>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">bakery_dining</span>
+                    <p>Padaria</p>
+                </a>
+            </nav>
+
+            <div class="aviso-lateral">
+                <span class="material-symbols-outlined">local_shipping</span>
+                <p>
+                    <strong>Frete grátis</strong><br>
+                    para compras acima de R$ 150,00
+                </p>
+            </div>
+        </aside>
+
+
+        <!-- Carrinho -->
+        <main class="conteudo-carrinho">
+
+            <div class="titulo-pagina">
+                <h2 class="subtitulo">Meu Carrinho</h2>
+                <span>(3 itens)</span>
+            </div>
+
+            <div class="area-carrinho">
+
+                <!-- Lista de produtos -->
+                <section class="lista-carrinho">
+                    <div class="cabecalho-lista">
+                        <p>Produto</p>
+                        <p>Preço</p>
+                        <p>Quantidade</p>
+                        <p>Subtotal</p>
+                    </div>
+
+                    <!-- Produto 1 -->
+                    <article class="item-carrinho">
+
+                        <div class="produto-carrinho">
+                            <div class="foto-produto">
+                                🍌
+                            </div>
+                            <div>
+                                <h3>Banana Prata</h3>
+                                <p class="texto-secundario">kg</p>
+                            </div>
+                        </div>
+
+                        <p class="preco-unitario">R$ 4,99</p>
+
+                        <div class="controle-quantidade">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+
+                        <p class="subtotal-item">R$ 4,99</p>
+
+                        <button class="remover-item" type="button">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                    </article>
+
+
+                    <!-- Produto 2 -->
+                    <article class="item-carrinho">
+
+                        <div class="produto-carrinho">
+                            <div class="foto-produto">
+                                🥛
+                            </div>
+                            <div>
+                                <h3>Leite Integral</h3>
+                                <p class="texto-secundario">1L</p>
+                            </div>
+                        </div>
+
+                        <p class="preco-unitario">R$ 4,29</p>
+
+                        <div class="controle-quantidade">
+                            <button type="button">−</button>
+                            <span>2</span>
+                            <button type="button">+</button>
+                        </div>
+
+                        <p class="subtotal-item">R$ 8,58</p>
+
+                        <button class="remover-item" type="button">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+
+                    </article>
+
+                    <!-- Produto 3 -->
+                    <article class="item-carrinho">
+
+                        <div class="produto-carrinho">
+                            <div class="foto-produto">
+                                ☕
+                            </div>
+                            <div>
+                                <h3>Café Torrado e Moído</h3>
+                                <p class="texto-secundario">500g</p>
+                            </div>
+                        </div>
+
+                        <p class="preco-unitario">R$ 16,90</p>
+
+                        <div class="controle-quantidade">
+                            <button type="button">−</button>
+                            <span>1</span>
+                            <button type="button">+</button>
+                        </div>
+
+                        <p class="subtotal-item">R$ 16,90</p>
+
+                        <button class="remover-item" type="button">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                    </article>
+
+                    <!-- Continuar comprando -->
+                    <a href="index.html" class="continuar-comprando">
+                        <span class="material-symbols-outlined">arrow_back</span>
+                        Continuar comprando
+                    </a>
+
+                    <!-- Barra de progresso do frete -->
+                    <div class="progresso-frete">
+                        <span class="material-symbols-outlined">local_shipping</span>
+                        <div class="progresso-conteudo">
+                            <p><strong>Aproveite! Você está a R$ 110,63 de ganhar frete grátis!</strong></p>
+                            <div class="barra-progresso">
+                                <div></div>
+                            </div>
+                        </div>
+                        <small>R$ 150,00</small>
+                    </div>
+                </section>
+
+                <!-- Resumo do pedido -->
+                <aside class="resumo-pedido">
+                    <h2 class="subtitulo">Resumo do pedido</h2>
+
+                    <div class="linha-resumo">
+                        <p>Subtotal (3 itens)</p>
+                        <p>R$ 30,47</p>
+                    </div>
+
+                    <div class="linha-resumo">
+                        <p>Frete</p>
+                        <p>R$ 8,90</p>
+                    </div>
+
+                    <div class="linha-resumo total">
+                        <strong>Total</strong>
+                        <strong>R$ 39,37</strong>
+                    </div>
+
+                    <button class="botao-finalizar botao">
+                        Finalizar compra
+                    </button>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Menu inferior mobile -->
+    <nav class="menu-inferior">
+        <a href="index.html">
+            <span class="material-symbols-outlined">home</span>
+            <p>Início</p>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">grid_view</span>
+            <p>Categorias</p>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">sell</span>
+            <p>Ofertas</p>
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">person</span>
+            <p>Conta</p>
+        </a>
+        <a href="telaCarrinho.html" class="ativo">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <p>Carrinho</p>
+        </a>
+    </nav>
+</body>
+
+</html>

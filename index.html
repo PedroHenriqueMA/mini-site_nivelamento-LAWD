@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Bacana</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Material+Symbols+Outlined&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="pagina-inicial">
+
+    <!-- Cabeçalho -->
+    <header>
+        <a href="index.html" class="logo">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            <p>Mercado<br>Bacana</p>
+        </a>
+
+        <div class="busca">
+            <input type="text" placeholder="O que você está procurando?">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+
+        <div class="nav">
+            <div class="conta">
+                <span class="material-symbols-outlined">person</span>
+                <p class="texto-primario">Entrar<br>ou cadastrar</p>
+            </div>
+
+            <div class="carrinho">
+                <a href="telaCarrinho.html">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <div class="quantidade">3</div>
+                </a>
+
+                <p class="texto-primario">
+                    Carrinho<br>
+                    R$ 47,90
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="layout-pagina">
+        <!-- Menu Lateral -->
+
+        <aside class="barra-lateral">
+            <nav>
+                <a href="index.html" class="ativo">
+                    <span class="material-symbols-outlined">home</span>
+                    Início
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    Todos os produtos
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">sell</span>
+                    Ofertas
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">nutrition</span>
+                    Hortifruti
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">shopping_bag</span>
+                    Mercearia
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">local_drink</span>
+                    Bebidas
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">soap</span>
+                    Limpeza
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">sanitizer</span>
+                    Higiene Pessoal
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">ac_unit</span>
+                    Congelados
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">bakery_dining</span>
+                    Padaria
+                </a>
+            </nav>
+            <div class="aviso-lateral">
+                <span class="material-symbols-outlined">eco</span>
+                <p class="texto-primario">
+                    <strong>Produtos frescos todos os dias!</strong><br>
+                    Qualidade e praticidade para o seu dia a dia.
+                </p>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+
+        <div class="conteudo-inicial">
+
+            <!-- Cartaz -->
+            <section class="cartaz">
+                <div class="cartaz-conteudo">
+                    <h1 class="titulo">
+                        Qualidade e variedade para o seu
+                        <strong>dia a dia!</strong>
+                    </h1>
+                    <p class="subtitulo">
+                        Tudo o que você precisa, em um só lugar.
+                    </p>
+                    <button class="botao">
+                        Ver ofertas
+                    </button>
+                </div>
+                <div class="cartaz-imagem"></div>
+            </section>
+
+            <!-- Ofertas em Destaque -->
+
+            <section class="produtos">
+                <div class="topo">
+                    <h2 class="subtitulo">
+                        Ofertas em destaque
+                    </h2>
+
+                    <a href="#" class="ver-todas">
+                        <p class="texto-primario">Ver todas</p>
+                        <span class="material-symbols-outlined">arrow_right_alt</span>
+                    </a>
+                </div>
+
+                <ul class="lista-produtos">
+
+                    <!-- Banana -->
+                    <li class="card-produto">
+                        <div class="imagem">
+                            <span class="desconto">-28%</span>
+                            <span class="imagem-produto">🍌</span>
+                        </div>
+                        <p class="subtitulo">Banana Prata</p>
+                        <p class="texto-primario">kg</p>
+                        <p class="texto-secundario">R$ 6,99</p>
+                        <p class="preco">R$ 4,99</p>
+                        <button class="botao">
+                            Adicionar
+                        </button>
+                    </li>
+
+
+                    <!-- Leite -->
+                    <li class="card-produto">
+                        <div class="imagem">
+                            <span class="desconto">-22%</span>
+                            <span class="imagem-produto">🥛</span>
+                        </div>
+                        <p class="subtitulo">Leite Integral</p>
+                        <p class="texto-primario">1L</p>
+                        <p class="texto-secundario">R$ 6,49</p>
+                        <p class="preco">R$ 4,29</p>
+                        <button class="botao">
+                            Adicionar
+                        </button>
+                    </li>
+
+
+                    <!-- Café -->
+                    <li class="card-produto">
+                        <div class="imagem">
+                            <span class="desconto">-20%</span>
+                            <span class="imagem-produto">☕</span>
+                        </div>
+                        <p class="subtitulo">Café Torrado e Moído</p>
+                        <p class="texto-primario">500g</p>
+                        <p class="texto-secundario">R$ 19,99</p>
+                        <p class="preco">R$ 17,99</p>
+                        <button class="botao">
+                            Adicionar
+                        </button>
+                    </li>
+
+                    <!-- Arroz -->
+                    <li class="card-produto">
+                        <div class="imagem">
+                            <span class="imagem-produto">🍚</span>
+                        </div>
+                        <p class="subtitulo">Arroz Tipo 1</p>
+                        <p class="texto-primario">5kg</p>
+                        <p class="preco">R$ 22,90</p>
+                        <button class="botao">
+                            Adicionar
+                        </button>
+                    </li>
+
+                    <!-- Frango -->
+                    <li class="card-produto">
+                        <div class="imagem">
+                            <span class="imagem-produto">🍗</span>
+                        </div>
+                        <p class="subtitulo">Filé de Frango</p>
+                        <p class="texto-primario">kg</p>
+                        <p class="preco">R$ 16,90</p>
+                        <button class="botao">
+                            Adicionar
+                        </button>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Mais Produtos -->
+            <section class="mais-produtos">
+                <h2 class="subtitulo">
+                    Mais produtos
+                </h2>
+                <div class="lista-categorias">
+                    <a href="#" class="categoria">
+                        <span class="categoria-imagem">🥦</span>
+                        <div>
+                            <p class="texto-primario">Hortifruti</p>
+                            <small>Frescor e sabor</small>
+                        </div>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+
+                    <a href="#" class="categoria">
+                        <span class="categoria-imagem">🛍️</span>
+                        <div>
+                            <p class="texto-primario">Mercearia</p>
+                            <small>Tudo para sua despensa</small>
+                        </div>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+
+                    <a href="#" class="categoria">
+                        <span class="categoria-imagem">🥤</span>
+                        <div>
+                            <p class="texto-primario">Bebidas</p>
+                            <small>Diversos sabores</small>
+                        </div>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+
+                    <a href="#" class="categoria">
+                        <span class="categoria-imagem">🧴</span>
+                        <div>
+                            <p class="texto-primario">Limpeza</p>
+                            <small>Sua casa mais limpa</small>
+                        </div>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+
+                    <a href="#" class="categoria">
+                        <span class="categoria-imagem">🍅</span>
+                        <div>
+                            <p class="texto-primario">Congelados</p>
+                            <small>Praticidade e sabor</small>
+                        </div>
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Menu Inferior Mobile -->
+    <nav class="menu-inferior">
+        <a href="index.html" class="ativo">
+            <span class="material-symbols-outlined">home</span>
+            Início
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">dashboard</span>
+            Categorias
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">sell</span>
+            Ofertas
+        </a>
+        <a href="#">
+            <span class="material-symbols-outlined">person</span>
+            Conta
+        </a>
+        <a href="telaCarrinho.html">
+            <span class="material-symbols-outlined">shopping_cart</span>
+            Carrinho
+        </a>
+    </nav>
+</body>
+
+</html>
