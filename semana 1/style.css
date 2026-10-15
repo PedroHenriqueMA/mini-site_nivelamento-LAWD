@@ -1,0 +1,160 @@
+:root {
+    --azul-marinho: #12365B;
+    --laranja-dourado: #FFA51F;
+    --branco: #FFF;
+    --cinza-claro-azulado: #F3F5F8;
+    --cinza-escuro-azulado: #526174;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+    border-bottom: 3px solid var(--cinza-claro-azulado);
+}
+
+header .logo {
+    width: 100px;
+    height: 100px;
+}
+
+header .perfil {
+    font-size: 32px;
+}
+
+.cartaz {
+    background-color: var(--azul-marinho);
+    color: var(--cinza-claro-azulado);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.livros {
+    margin: 20px 20px 50px;
+}
+
+.livros .busca-filtro {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin: 30px 0;
+}
+
+.livros .busca-filtro .campo-busca {
+    position: relative;
+}
+
+.livros .busca-filtro .campo-busca input {
+    width: 400px;
+    font-size: 18px;
+    padding: 10px 45px 10px 20px;
+    background: var(--cinza-claro-azulado);
+    border: 1px solid var(--cinza-escuro-azulado);
+    border-radius: 20px;
+
+}
+
+.livros .busca-filtro .campo-busca span {
+    position: absolute;
+    font-size: 24px;
+    top: 8px;
+    right: 15px;
+    pointer-events: none;
+}
+
+.livros .busca-filtro .filtros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.livros .busca-filtro .filtros span {
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lista-livros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.livro {
+    padding: 30px;
+    background: var(--cinza-claro-azulado);
+    border: 1px solid var(--cinza-escuro-azulado);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.livro img {
+    width: 100%;
+    max-width: 180px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.livro .preco {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.livro .titulo {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.livro .autores {
+    font-size: 14px;
+    color: var(--cinza-escuro-azulado);
+    margin-bottom: 20px;
+}
+
+.livro .estado {
+    margin-bottom: 10px;
+}
+
+.livro a {
+    background-color: var(--azul-marinho);
+    border: 1px solid var(--cinza-escuro-azulado);
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--azul-marinho);
+    color: var(--branco);
+}
+
+footer img {
+    position: absolute;
+    left: calc(50% - 25px);
+    width: 50px;
+}
+
+footer .redes-sociais {
+
+}
+
+footer .dados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+    font-size: 14px;
+    
+}
